@@ -5,7 +5,7 @@
     "windows": "https://github.com/backhung65-cpu/easyai-download/releases/download/v0.9.0/EasyAI-0.9.0-windows-x64.exe",
     "macArm": "",
     "macIntel": "",
-    "linuxAppImage": "",
-    "linuxDeb": ""
+    "linuxAppImage": "https://github.com/backhung65-cpu/easyai-download/releases/download/v0.9.0/EasyAI-0.9.0-linux-x86_64.AppImage",
+    "linuxDeb": "https://github.com/backhung65-cpu/easyai-download/releases/download/v0.9.0/EasyAI-0.9.0-linux-amd64.deb"
   }
 }

@@ -22,6 +22,12 @@ if (screenGrid) {
     screenGrid.append(figure);
   }
 }
+const cautions = document.querySelector('.value-card.caution ul');
+if (cautions) {
+  const item = document.createElement('li');
+  item.textContent = 'Windows 설치 파일도 현재 코드 서명 전이라 SmartScreen의 보안 확인이 표시될 수 있습니다.';
+  cautions.append(item);
+}
 
 async function loadRelease() {
   try {
