@@ -1,0 +1,11 @@
+{
+  "version": "0.9.0",
+  "releaseUrl": "",
+  "assets": {
+    "windows": "",
+    "macArm": "",
+    "macIntel": "",
+    "linuxAppImage": "",
+    "linuxDeb": ""
+  }
+}
