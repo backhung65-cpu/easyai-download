@@ -2,9 +2,21 @@ const links = document.querySelectorAll('[data-asset]');
 const screenGrid = document.querySelector('.screen-grid');
 if (screenGrid) {
   for (const [file, title, description] of [
-    ['screen-ai.png', 'AI 선택과 연결', '현재 사용하는 AI를 앱 안에서 고릅니다.'],
-    ['screen-worship.png', '예배 정보', '교회와 예배 날짜를 순서대로 채웁니다.'],
-    ['screen-font.png', 'AI 초안과 글꼴', '원문 요점과 발표 글꼴을 확인합니다.'],
+    [
+      'screen-ai.png',
+      'AI 선택과 연결',
+      '현재 사용하는 AI를 앱 안에서 고릅니다.',
+    ],
+    [
+      'screen-worship.png',
+      '예배 정보',
+      '교회와 예배 날짜를 순서대로 채웁니다.',
+    ],
+    [
+      'screen-font.png',
+      'AI 초안과 글꼴',
+      '원문 요점과 발표 글꼴을 확인합니다.',
+    ],
   ]) {
     const figure = document.createElement('figure');
     figure.className = 'screen-card';
@@ -22,13 +34,6 @@ if (screenGrid) {
     screenGrid.append(figure);
   }
 }
-const cautions = document.querySelector('.value-card.caution ul');
-if (cautions) {
-  const item = document.createElement('li');
-  item.textContent = 'Windows 설치 파일도 현재 코드 서명 전이라 SmartScreen의 보안 확인이 표시될 수 있습니다.';
-  cautions.append(item);
-}
-
 async function loadRelease() {
   try {
     const response = await fetch('releases.json', { cache: 'no-store' });
@@ -39,7 +44,8 @@ async function loadRelease() {
       if (typeof url !== 'string' || !/^https:\/\//.test(url)) continue;
       link.href = url;
       link.removeAttribute('aria-disabled');
-      link.textContent = link.dataset.asset === 'linuxDeb' ? '.deb 다운로드' : '다운로드 ↗';
+      link.textContent =
+        link.dataset.asset === 'linuxDeb' ? '.deb 다운로드' : '다운로드 ↗';
     }
     const history = document.getElementById('release-link');
     if (history && /^https:\/\//.test(release.releaseUrl || '')) {
@@ -48,7 +54,9 @@ async function loadRelease() {
     }
   } catch {
     const note = document.querySelector('.download-note');
-    if (note) note.textContent += ' 배포 목록을 불러오지 못했습니다. 잠시 후 새로고침해 주세요.';
+    if (note)
+      note.textContent +=
+        ' 배포 목록을 불러오지 못했습니다. 잠시 후 새로고침해 주세요.';
   }
 }
 
