@@ -1,38 +1,45 @@
 const links = document.querySelectorAll('[data-asset]');
-const screenGrid = document.querySelector('.screen-grid');
-if (screenGrid) {
-  for (const [file, title, description] of [
-    [
-      'screen-ai.png',
-      'AI 선택과 연결',
-      '현재 사용하는 AI를 앱 안에서 고릅니다.',
-    ],
-    [
-      'screen-worship.png',
-      '예배 정보',
-      '교회와 예배 날짜를 순서대로 채웁니다.',
-    ],
-    [
-      'screen-font.png',
-      'AI 초안과 글꼴',
-      '원문 요점과 발표 글꼴을 확인합니다.',
-    ],
-  ]) {
-    const figure = document.createElement('figure');
-    figure.className = 'screen-card';
-    const picture = document.createElement('img');
-    picture.src = `assets/${file}`;
-    picture.alt = `${title} 화면`;
-    picture.loading = 'lazy';
-    const caption = document.createElement('figcaption');
-    const heading = document.createElement('b');
-    heading.textContent = title;
-    const detail = document.createElement('span');
-    detail.textContent = description;
-    caption.append(heading, detail);
-    figure.append(picture, caption);
-    screenGrid.append(figure);
-  }
+const walkthrough = document.querySelector('.walkthrough');
+if (walkthrough) {
+  const slides = [...walkthrough.querySelectorAll('.walkthrough__slide')];
+  const track = walkthrough.querySelector('.walkthrough__track');
+  const previous = walkthrough.querySelector('[data-carousel-prev]');
+  const next = walkthrough.querySelector('[data-carousel-next]');
+  const count = walkthrough.querySelector('[data-carousel-count]');
+  const dots = walkthrough.querySelector('[data-carousel-dots]');
+  let active = 0;
+
+  const goTo = (index) => {
+    active = Math.max(0, Math.min(index, slides.length - 1));
+    track.style.transform = `translateX(-${active * 100}%)`;
+    count.textContent = `${active + 1} / ${slides.length}`;
+    previous.disabled = active === 0;
+    next.disabled = active === slides.length - 1;
+    slides.forEach((slide, slideIndex) => {
+      slide.setAttribute('aria-hidden', String(slideIndex !== active));
+      slide.inert = slideIndex !== active;
+    });
+    [...dots.children].forEach((dot, dotIndex) =>
+      dot.setAttribute('aria-current', String(dotIndex === active)),
+    );
+  };
+
+  slides.forEach((slide, index) => {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.setAttribute('aria-label', `${index + 1}번 화면 보기`);
+    dot.addEventListener('click', () => goTo(index));
+    dots.append(dot);
+  });
+  previous.addEventListener('click', () => goTo(active - 1));
+  next.addEventListener('click', () => goTo(active + 1));
+  walkthrough.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+      event.preventDefault();
+      goTo(active + (event.key === 'ArrowRight' ? 1 : -1));
+    }
+  });
+  goTo(0);
 }
 async function loadRelease() {
   try {
