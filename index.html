@@ -29,12 +29,12 @@
     <main id="main">
       <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow">예배 준비를 위한 데스크톱 앱 · v0.9.1</p>
+          <p class="eyebrow">예배 준비를 위한 데스크톱 앱 · v0.10.0</p>
           <h1>매주 반복하는<br /><em>예배 PPT 준비,</em><br />한곳에서 끝내세요.</h1>
           <p class="hero-lead">
             설교 원문을 붙여넣으면 AI가 발표할 요점을 정리합니다. 우리 교회의 실제
             예배 순서를 더하고, 완성된 슬라이드를 보며 문장을 고친 뒤 편집 가능한
-            PPTX로 저장하세요.
+            PPTX로 저장하세요. 주보 PDF/HWPX도 불러올 수 있습니다.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#download"
@@ -66,7 +66,7 @@
       </section>
       <section class="trust-strip" aria-label="핵심 정보">
         <div><strong>4</strong><span>선택 가능한 AI CLI</span></div>
-        <div><strong>3</strong><span>내장 PPT 디자인</span></div>
+        <div><strong>51</strong><span>MD 기반 디자인</span></div>
         <div><strong>2</strong><span>내보내기 형식</span></div>
         <div><strong>0</strong><span>앱에 입력할 API 키</span></div>
       </section>
@@ -78,8 +78,8 @@
         </div>
         <div class="outcome-grid">
           <article><span>설교 준비</span><h3>설교 원문에서 발표 요점까지</h3><p>설교 원문을 그대로 넣습니다. AI가 발표에 쓸 요점을 제안하고, 근거가 된 원문 문장도 함께 확인할 수 있습니다.</p></article>
-          <article><span>예배 진행</span><h3>우리 교회의 실제 예배 순서 반영</h3><p>예배 순서와 담당자를 입력합니다. 실제 진행 흐름을 반영한 슬라이드를 만들 수 있습니다.</p></article>
-          <article><span>마지막 교정</span><h3>한 장씩 보고 바로 문장 수정</h3><p>슬라이드를 한 장씩 보고 채팅으로 문장을 고칩니다. 다운로드한 PPTX에서도 텍스트를 다시 편집할 수 있습니다.</p></article>
+          <article><span>예배 진행</span><h3>주보에서 실제 예배 순서를 가져오기</h3><p>PDF/HWPX 주보를 읽어 순서와 담당자를 채웁니다. 원본과 비교해 확인한 후 슬라이드에 반영합니다.</p></article>
+          <article><span>마지막 교정</span><h3>AI 점검과 채팅 수정</h3><p>AI가 슬라이드 개선점을 제안합니다. 표지용 벡터 일러스트를 만들고, 필요한 문장을 한 장씩 고칩니다.</p></article>
         </div>
       </section>
       <section class="section workflow" id="workflow">
@@ -102,24 +102,24 @@
             <span>02</span>
             <h3>PPT 디자인 고르기</h3>
             <p>
-              내장된 디자인 사양서 3개를 실제 16:9 슬라이드 모양으로 보고
-              선택합니다.
+              제공된 디자인 MD 51개를 실제 16:9 슬라이드 모양으로 보고
+              선택합니다. 이미지와 브랜드 문서는 PPT용으로 해석합니다.
             </p>
           </article>
           <article>
             <span>03</span>
             <h3>원문과 순서 입력</h3>
             <p>
-              설교 요점 대신 원문을 붙여넣고, 교회의 실제 예배 순서를 진행
-              순서대로 적습니다.
+              주보 PDF/HWPX를 읽거나 설교 원문과 실제 예배 순서를 입력합니다.
+              예배 순서는 원본을 보고 확인합니다.
             </p>
           </article>
           <article>
             <span>04</span>
             <h3>보고 고쳐서 저장</h3>
             <p>
-              AI가 뽑은 요점의 근거를 확인하고, 슬라이드 한 장씩 채팅으로 고친
-              후 PPTX 또는 HTML로 저장합니다.
+              AI가 뽑은 요점의 근거와 개선점을 확인하고, 일러스트를 생성하거나
+              슬라이드를 채팅으로 고친 후 PPTX 또는 HTML로 저장합니다.
             </p>
           </article>
         </div>
@@ -134,7 +134,7 @@
           </p>
         </div>
         <div class="walkthrough" aria-roledescription="캐러셀" aria-label="쉬운AI 실제 화면 둘러보기" tabindex="0">
-          <div class="walkthrough__topline"><span>실제 앱 화면 · 1280 × 800 캡처</span><strong data-carousel-count aria-live="polite">1 / 7</strong></div>
+          <div class="walkthrough__topline"><span>실제 앱 화면 · 1280 × 800 캡처</span><strong data-carousel-count aria-live="polite">1 / 8</strong></div>
           <div class="walkthrough__viewport">
             <div class="walkthrough__track">
               <figure class="walkthrough__slide">
@@ -142,7 +142,7 @@
                 <figcaption><span>01 · AI 연결</span><strong>터미널을 열지 않고, 쓰는 AI를 선택합니다.</strong><p>이미 사용하는 CLI를 확인하고 앱 안에서 연결 상태를 봅니다.</p><a href="assets/showcase-home.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
               </figure>
               <figure class="walkthrough__slide">
-                <img src="assets/showcase-design.png" width="1280" height="800" alt="세 가지 실제 발표 슬라이드 모양으로 PPT 디자인을 고르는 화면" />
+                <img src="assets/showcase-design.png" width="1280" height="800" alt="51가지 MD 기반 디자인을 실제 PPT 표지 모양으로 고르는 화면" />
                 <figcaption><span>02 · 디자인 선택</span><strong>색 이름 대신 실제 슬라이드를 보고 고릅니다.</strong><p>16:9 표지 미리보기로 발표 분위기를 먼저 확인합니다.</p><a href="assets/showcase-design.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
               </figure>
               <figure class="walkthrough__slide">
@@ -158,12 +158,16 @@
                 <figcaption><span>05 · 예배 순서</span><strong>교회가 실제 진행하는 순서를 담습니다.</strong><p>순서와 담당자를 확인한 뒤 슬라이드에 적용합니다.</p><a href="assets/showcase-order.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
               </figure>
               <figure class="walkthrough__slide">
+                <img src="assets/showcase-ai-font.png" width="1280" height="800" alt="AI 연결과 글꼴을 선택하는 화면" />
+                <figcaption><span>06 · AI와 글꼴</span><strong>쓰는 AI와 발표 글꼴을 고릅니다.</strong><p>원문 요점을 AI로 만들고 PC 글꼴이나 올린 글꼴을 선택합니다.</p><a href="assets/showcase-ai-font.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
+              </figure>
+              <figure class="walkthrough__slide">
                 <img src="assets/showcase-review.png" width="1280" height="800" alt="완성된 16대9 슬라이드를 한 장씩 확인하는 화면" />
-                <figcaption><span>06 · 결과 확인</span><strong>내보내기 전에 슬라이드를 직접 봅니다.</strong><p>목록에서 한 장씩 선택하고 발표 화면의 구성을 살펴봅니다.</p><a href="assets/showcase-review.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
+                <figcaption><span>07 · 결과 확인</span><strong>내보내기 전에 슬라이드를 직접 봅니다.</strong><p>목록에서 한 장씩 선택하고 발표 화면의 구성을 살펴봅니다.</p><a href="assets/showcase-review.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
               </figure>
               <figure class="walkthrough__slide">
                 <img src="assets/showcase-correct.png" width="1280" height="800" alt="선택한 슬라이드의 문장을 채팅으로 수정하는 화면" />
-                <figcaption><span>07 · 채팅 교정</span><strong>마음에 안 드는 문장은 바로 고칩니다.</strong><p>슬라이드 한 장을 골라 대화로 수정한 뒤 PPTX 또는 HTML로 저장합니다.</p><a href="assets/showcase-correct.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
+                <figcaption><span>08 · 채팅 교정</span><strong>마음에 안 드는 문장은 바로 고칩니다.</strong><p>슬라이드 한 장을 골라 대화로 수정한 뒤 PPTX 또는 HTML로 저장합니다.</p><a href="assets/showcase-correct.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
               </figure>
             </div>
           </div>
@@ -184,6 +188,9 @@
                 CLI 명령을 외우지 않고 앱에서 AI를 선택하고 설치할 수 있습니다.
               </li>
               <li>설교 원문에서 요점을 만들고 근거 문장을 함께 확인합니다.</li>
+              <li>주보 PDF/HWPX를 읽고, 실제 예배 순서와 교회 소식을 가져옵니다.</li>
+              <li>AI가 슬라이드를 점검하고 수정할 지점을 제안합니다.</li>
+              <li>AI 벡터 일러스트를 생성해 PPT 도형으로 편집할 수 있습니다.</li>
               <li>
                 예배 순서와 담당을 교회가 실제 진행하는 순서대로 넣습니다.
               </li>
@@ -203,12 +210,12 @@
                 한도에 도달하면 다른 AI를 선택하거나 직접 입력할 수 있습니다.
               </li>
               <li>
-                현재 내장 디자인은 3종입니다. 임의의 MD 전체를 자동으로
-                해석하지는 않습니다.
+                51개 MD를 PPT용 색과 배치로 변환합니다. 원문 이미지의 모든
+                세부 스타일을 그대로 복제하지는 않습니다.
               </li>
               <li>
-                참조 이미지 수준의 사진·삽화 자동 생성은 아직 구현되지
-                않았습니다. 현재 원본 로고만 자동 삽입합니다.
+                새로 생성하는 그림은 벡터 도형입니다. 사진 수준의 이미지는
+                자동 생성하지 않습니다.
               </li>
               <li>채팅 교정은 선택한 슬라이드 한 장을 대상으로 합니다.</li>
               <li>
@@ -225,7 +232,7 @@
       </section>
       <section class="section download" id="download">
         <div class="section-heading">
-          <p class="eyebrow">DOWNLOAD · v0.9.1</p>
+          <p class="eyebrow">DOWNLOAD · v0.10.0</p>
           <h2>내 컴퓨터에 맞게 받으세요</h2>
           <p>
             버튼은 실제 배포 파일이 준비된 운영체제에서만 활성화됩니다. 설치 후
