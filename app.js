@@ -46,7 +46,10 @@ async function loadRelease() {
       history.href = release.releaseUrl;
       history.hidden = false;
     }
-  } catch { /* 배포 파일이 아직 없으면 준비 중 상태를 유지합니다. */ }
+  } catch {
+    const note = document.querySelector('.download-note');
+    if (note) note.textContent += ' 배포 목록을 불러오지 못했습니다. 잠시 후 새로고침해 주세요.';
+  }
 }
 
 loadRelease();
