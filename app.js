@@ -68,3 +68,16 @@ async function loadRelease() {
 }
 
 loadRelease();
+
+const copyAccount = document.querySelector('[data-copy-account]');
+if (copyAccount) {
+  copyAccount.addEventListener('click', async () => {
+    const status = document.querySelector('.support-info__copy-status');
+    try {
+      await navigator.clipboard.writeText(copyAccount.dataset.copyAccount);
+      if (status) status.textContent = '계좌번호를 복사했습니다.';
+    } catch {
+      if (status) status.textContent = '복사하지 못했습니다. 위의 계좌번호를 직접 선택해 주세요.';
+    }
+  });
+}
