@@ -29,11 +29,11 @@
     <main id="main">
       <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow">예배 준비를 위한 데스크톱 앱 · v0.11.0</p>
+          <p class="eyebrow">예배 준비를 위한 데스크톱 앱 · v0.15.2</p>
           <h1>매주 반복하는<br /><em>예배 PPT 준비,</em><br />한곳에서 끝내세요.</h1>
           <p class="hero-lead">
-            설교 원문을 붙여넣으면 AI가 발표할 요점을 정리합니다. 우리 교회의 실제
-            예배 순서를 더하고, 완성된 슬라이드를 보며 문장을 고친 뒤 편집 가능한
+            설교 원문을 붙여넣으면 AI가 장수를 제안하고 슬라이드를 설계합니다.
+            고른 화풍으로 그림을 그려 넣고, 결과를 보며 대화로 고친 뒤 편집 가능한
             PPTX로 저장하세요. 주보 PDF/HWPX도 불러올 수 있습니다.
           </p>
           <div class="hero-actions">
@@ -66,8 +66,8 @@
       </section>
       <section class="trust-strip" aria-label="핵심 정보">
         <div><strong>4</strong><span>선택 가능한 AI CLI</span></div>
-        <div><strong>51</strong><span>MD 기반 디자인</span></div>
-        <div><strong>2</strong><span>내보내기 형식</span></div>
+        <div><strong>51</strong><span>발표 디자인·그림 스타일 MD</span></div>
+        <div><strong>3</strong><span>저장 형식(PPTX 2종·HTML)</span></div>
         <div><strong>0</strong><span>앱에 입력할 API 키</span></div>
       </section>
       <section class="section outcomes" aria-labelledby="outcomes-heading">
@@ -79,7 +79,7 @@
         <div class="outcome-grid">
           <article><span>설교 준비</span><h3>설교 원문에서 발표 요점까지</h3><p>설교 원문을 그대로 넣습니다. AI가 발표에 쓸 요점을 제안하고, 근거가 된 원문 문장도 함께 확인할 수 있습니다.</p></article>
           <article><span>예배 진행</span><h3>주보에서 실제 예배 순서를 가져오기</h3><p>PDF/HWPX 주보를 읽어 순서와 담당자를 채웁니다. 원본과 비교해 확인한 후 슬라이드에 반영합니다.</p></article>
-          <article><span>마지막 교정</span><h3>AI 점검과 채팅 수정</h3><p>AI가 슬라이드 개선점을 제안합니다. 표지용 벡터 일러스트를 만들고, 필요한 문장을 한 장씩 고칩니다.</p></article>
+          <article><span>그림과 교정</span><h3>AI 그림과 대화 수정</h3><p>고른 그림 스타일로 표지와 요점 화면에 그림을 그려 넣습니다. 「요점을 한 장 더 늘려 줘」처럼 말하면 PPT 전체에 바로 반영됩니다.</p></article>
         </div>
       </section>
       <section class="section workflow" id="workflow">
@@ -100,10 +100,10 @@
           </article>
           <article>
             <span>02</span>
-            <h3>PPT 디자인 고르기</h3>
+            <h3>디자인과 그림 스타일 고르기</h3>
             <p>
-              제공된 디자인 MD 51개를 실제 16:9 슬라이드 모양으로 보고
-              선택합니다. 이미지와 브랜드 문서는 PPT용으로 해석합니다.
+              슬라이드 모양을 정하는 발표 디자인과 그림의 화풍을 정하는 그림
+              스타일을 따로 고르고, 결과 모양을 미리 봅니다.
             </p>
           </article>
           <article>
@@ -118,8 +118,8 @@
             <span>04</span>
             <h3>보고 고쳐서 저장</h3>
             <p>
-              연결된 AI가 요점, 일러스트, 개선점을 준비합니다. 근거를 확인하고
-              슬라이드를 채팅으로 고친 후 PPTX 또는 HTML로 저장합니다.
+              AI가 장수를 정하거나 내가 정한 장수로 슬라이드와 그림을 만듭니다.
+              대화로 고친 후 PPTX(에디토리얼·사진형 템플릿) 또는 HTML로 저장합니다.
             </p>
           </article>
         </div>
@@ -193,9 +193,10 @@
               </li>
               <li>설교 원문에서 요점을 만들고 근거 문장을 함께 확인합니다.</li>
               <li>주보 PDF/HWPX를 읽고, 실제 예배 순서와 교회 소식을 가져옵니다.</li>
-              <li>AI가 슬라이드를 점검하고 수정할 지점을 제안합니다.</li>
-              <li>AI 벡터 일러스트를 생성해 PPT 도형으로 편집할 수 있습니다.</li>
-              <li>에디토리얼 스킬의 카드·단계 레이아웃과 8개 색상 테마를 선택할 수 있습니다.</li>
+              <li>AI가 원문 분량을 보고 장수를 제안하고 그 이유를 보여 줍니다. 직접 정할 수도 있습니다.</li>
+              <li>고른 그림 스타일로 표지·설교 제목·요점 화면에 그림을 그려 넣습니다.</li>
+              <li>비교·단계·시간선·질문과 답·성경 인물 이야기 등 10가지 레이아웃과 8개 색상 테마, 사진형 템플릿을 고를 수 있습니다.</li>
+              <li>결과 화면에서 대화로 PPT 전체 또는 한 장을 고칩니다.</li>
               <li>
                 예배 순서와 담당을 교회가 실제 진행하는 순서대로 넣습니다.
               </li>
@@ -219,10 +220,10 @@
                 세부 스타일을 그대로 복제하지는 않습니다.
               </li>
               <li>
-                새로 생성하는 그림은 벡터 도형입니다. 사진 수준의 이미지는
-                자동 생성하지 않습니다.
+                그림 생성에는 Codex 설치와 로그인이 필요하고, 그 계정의 사용량이
+                쓰입니다. 그림 한 장에 30초~1분쯤 걸립니다.
               </li>
-              <li>채팅 교정은 선택한 슬라이드 한 장을 대상으로 합니다.</li>
+              <li>0.15.2는 Windows 설치 파일만 있습니다. Linux는 0.11.0이 최신입니다.</li>
               <li>
                 Mac 설치 파일은 서명·공증 전까지 macOS의 보안 확인이 필요할 수
                 있습니다.
@@ -262,7 +263,7 @@
       </section>
       <section class="section download" id="download">
         <div class="section-heading">
-          <p class="eyebrow">DOWNLOAD · v0.11.0</p>
+          <p class="eyebrow">DOWNLOAD · v0.15.2</p>
           <h2>내 컴퓨터에 맞게 받으세요</h2>
           <p>
             버튼은 실제 배포 파일이 준비된 운영체제에서만 활성화됩니다. 설치 후
@@ -306,7 +307,7 @@
           <article>
             <span class="platform-icon">◆</span>
             <h3>Linux</h3>
-            <p>64비트 · x64</p>
+            <p>64비트 · x64 · 이전 버전 0.11.0</p>
             <a
               class="button button-primary download-link"
               data-asset="linuxAppImage"
