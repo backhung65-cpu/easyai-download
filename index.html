@@ -3,342 +3,190 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="쉬운AI는 설교 원문과 실제 예배 순서를 바탕으로 편집 가능한 예배 PPT를 만드는 데스크톱 앱입니다. 기능과 한계를 살펴보고 운영체제에 맞게 다운로드하세요."
-    />
-    <title>쉬운AI — 설교 원문에서 예배 PPT까지</title>
+    <meta name="description" content="쉬운AI는 설교 원고와 예배 순서로 주일 예배 PPT를 만들고, 캔바처럼 직접 고치거나 AI에게 말로 고쳐 달라고 할 수 있는 무료 Windows 프로그램입니다." />
+    <meta name="theme-color" content="#16443A" />
+    <title>쉬운AI — 설교 원고가 예배 화면이 됩니다</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">본문으로 이동</a>
-    <header class="site-header">
-      <a class="brand" href="#top"
-        ><span class="brand-mark"><img src="assets/logo.png" alt="" /></span
-        ><span>쉬운AI<small>MINISTRY AI LAB</small></span></a
-      >
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
+    <header class="top">
+      <a class="wordmark" href="#main" aria-label="쉬운AI 처음으로">쉬운AI<small>개발 · 목회 AI 연구소</small></a>
       <nav aria-label="주 메뉴">
-        <a href="#workflow">사용 방법</a><a href="#screens">실제 화면</a
-        ><a href="#limits">장점과 한계</a
-        ><a class="nav-download" href="#download"
-          >다운로드 <span aria-hidden="true">↗</span></a
-        >
+        <a href="#steps">만드는 순서</a>
+        <a href="#editor">편집기</a>
+        <a href="#promise">지키는 것</a>
+        <a href="#support">후원</a>
+        <a class="btn btn--ink btn--small" href="#download">내려받기</a>
       </nav>
     </header>
+
     <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <p class="eyebrow">예배 준비를 위한 데스크톱 앱 · v0.16.0</p>
-          <h1>매주 반복하는<br /><em>예배 PPT 준비,</em><br />한곳에서 끝내세요.</h1>
-          <p class="hero-lead">
-            설교 원문을 붙여넣으면 AI가 장수를 제안하고 슬라이드를 설계합니다.
-            고른 화풍으로 그림을 그려 넣고, 결과를 보며 대화로 고친 뒤 편집 가능한
-            PPTX로 저장하세요. 주보 PDF/HWPX도 불러올 수 있습니다.
-            <strong>새 편집기</strong>에서 글·도형·그림·영상을 캔바처럼 직접 넣고 옮기며,
-            "이 쪽 제목을 크게"처럼 말로 부탁하면 AI가 바로 고쳐 줍니다.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#download"
-              >내 컴퓨터에 설치하기 <span aria-hidden="true">↗</span></a
-            ><a class="button button-secondary" href="#screens"
-              >실제 화면 보기</a
-            >
+      <!-- 첫 화면: 원고 한 장이 예배 화면이 되는 모습 -->
+      <section class="hero">
+        <div class="hero__copy">
+          <p class="kicker">주일 예배 PPT · Windows · 무료</p>
+          <h1>설교 원고가<br /><span class="nowrap">예배 화면이 됩니다</span></h1>
+          <p class="lead">원고와 이번 주 예배 순서를 넣으면, AI가 몇 장으로 만들지 정하고 슬라이드를 짜고 그림까지 그립니다. 마지막 손질은 편집기에서 직접 하거나 AI에게 말로 부탁하세요.</p>
+          <div class="hero__actions">
+            <a class="btn btn--ink" href="#download" data-asset="windows" data-keep-label>Windows용 내려받기 <span class="btn__meta" data-version>v0.16.0</span></a>
+            <a class="btn btn--line" href="#steps">어떻게 만드는지 보기</a>
           </div>
-          <div class="hero-points">
-            <span>설교 원문 기반</span><span>기존 AI 계정 연결</span
-            ><span>편집 가능한 PPTX</span
-            ><span>캔바식 편집기 · AI 수정창</span>
-          </div>
+          <p class="hero__note">이미 쓰는 Claude·Codex 계정으로 움직입니다. 원고와 예배 정보는 이 PC에만 저장됩니다.</p>
         </div>
-        <div class="hero-visual">
-          <div class="hero-glow"></div>
-          <div class="app-frame">
-            <div class="frame-top">
-              <i></i><i></i><i></i><span>쉬운AI · 실제 Windows 앱 화면</span>
+
+        <figure class="manuscript">
+          <div class="sheet" aria-hidden="true">
+            <p class="sheet__head">빌립보서 4:6-7 · 염려 대신 기도로</p>
+            <p>셋째, 감사로 아뢰면 평안이 지켜 줍니다. 7절은 그리스도 예수 안에서 너희 마음과 생각을 지키시리라고 약속합니다.</p>
+            <p><mark style="--i: 0">문제 한가운데서 우리 마음을 지켜 주시는 평안</mark>입니다. 평강이 우리 마음을 지킨다는 말은 군인이 성문을 지키듯 <mark style="--i: 1">하나님이 우리 마음의 문 앞에 서 계신다</mark>는 뜻입니다.</p>
+            <p>오늘부터 염려가 올라올 때마다 그것을 한 문장으로 적고, 감사 한 가지를 붙여 하나님께 아뢰십시오.</p>
+          </div>
+          <div class="slide" aria-hidden="true">
+            <div class="slide__text">
+              <span class="slide__title">마음을 지키는 평안</span>
+              <span class="slide__big">문제 한가운데서<br />우리를 지킵니다</span>
+              <span class="slide__box">하나님이 우리 마음의 문 앞에 서 계십니다</span>
             </div>
-            <img
-              src="assets/showcase-home.png"
-              alt="쉬운AI 첫 화면. AI 선택 버튼과 예배 PPT 만들기 버튼이 보입니다."
-            />
+            <img src="assets/sample-gate.jpg" alt="" width="768" height="512" />
           </div>
-          <div class="visual-caption">
-            <strong>01 / AI 연결</strong><span>사용할 도구만 골라 시작</span>
-          </div>
-        </div>
+          <figcaption>원고에 있는 말로 화면을 짭니다. 원고에 없는 구절·숫자는 지어내지 않습니다.</figcaption>
+        </figure>
       </section>
-      <section class="trust-strip" aria-label="핵심 정보">
-        <div><strong>4</strong><span>선택 가능한 AI CLI</span></div>
-        <div><strong>51</strong><span>발표 디자인·그림 스타일 MD</span></div>
-        <div><strong>3</strong><span>저장 형식(PPTX 2종·HTML)</span></div>
-        <div><strong>0</strong><span>앱에 입력할 API 키</span></div>
-      </section>
-      <section class="section outcomes" aria-labelledby="outcomes-heading">
-        <div class="section-heading">
-          <p class="eyebrow">WHY EASYAI</p>
-          <h2 id="outcomes-heading">예배 준비에서 손이 많이 가는 일을 줄입니다</h2>
-          <p>원문 정리, 순서 반영, 문장 수정이 서로 다른 도구에 흩어지지 않도록 한 흐름으로 묶었습니다.</p>
+
+      <!-- 만드는 순서: 실제 순서라 번호를 붙인다 -->
+      <section class="steps" id="steps" aria-labelledby="steps-title">
+        <div class="head">
+          <p class="kicker">만드는 순서</p>
+          <h2 id="steps-title">토요일 밤, 다섯 걸음이면 됩니다</h2>
         </div>
-        <div class="outcome-grid">
-          <article><span>설교 준비</span><h3>설교 원문에서 발표 요점까지</h3><p>설교 원문을 그대로 넣습니다. AI가 발표에 쓸 요점을 제안하고, 근거가 된 원문 문장도 함께 확인할 수 있습니다.</p></article>
-          <article><span>예배 진행</span><h3>주보에서 실제 예배 순서를 가져오기</h3><p>PDF/HWPX 주보를 읽어 순서와 담당자를 채웁니다. 원본과 비교해 확인한 후 슬라이드에 반영합니다.</p></article>
-          <article><span>그림과 교정</span><h3>AI 그림과 대화 수정</h3><p>고른 그림 스타일로 표지와 요점 화면에 그림을 그려 넣습니다. 「요점을 한 장 더 늘려 줘」처럼 말하면 PPT 전체에 바로 반영됩니다.</p></article>
-        </div>
-      </section>
-      <section class="section workflow" id="workflow">
-        <div class="section-heading">
-          <p class="eyebrow">HOW IT WORKS</p>
-          <h2>긴 설정 대신, 한 단계씩</h2>
-          <p>필요한 내용을 순서대로 입력하고 결과를 눈으로 확인합니다.</p>
-        </div>
-        <div class="workflow-grid">
-          <article>
-            <span>01</span>
-            <h3>사용할 AI 고르기</h3>
-            <p>
-              Antigravity, Claude, Hermes, Codex 중 본인이 사용하는 도구를
-              선택합니다. 설치되지 않았다면 앱에서 해당 도구의 공식 설치를
-              시작합니다.
-            </p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>디자인과 그림 스타일 고르기</h3>
-            <p>
-              슬라이드 모양을 정하는 발표 디자인과 그림의 화풍을 정하는 그림
-              스타일을 따로 고르고, 결과 모양을 미리 봅니다.
-            </p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>원문과 순서 입력</h3>
-            <p>
-              주보 PDF/HWPX를 읽거나 설교 원문과 실제 예배 순서를 입력합니다.
-              예배 순서는 원본을 보고 확인합니다.
-            </p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>보고 고쳐서 저장</h3>
-            <p>
-              AI가 장수를 정하거나 내가 정한 장수로 슬라이드와 그림을 만듭니다.
-              대화로 고친 후 PPTX(에디토리얼·사진형 템플릿) 또는 HTML로 저장합니다.
-            </p>
-          </article>
-        </div>
-      </section>
-      <section class="section screens" id="screens">
-        <div class="section-heading">
-          <p class="eyebrow">REAL APP SCREENS</p>
-          <h2>실제 앱을 한 화면씩 살펴보세요</h2>
-          <p>
-            Windows 앱에서 직접 캡처했습니다. 화살표를 누르면 연결부터 교정까지
-            순서대로 넘어갑니다. 이미지를 자르거나 목업으로 바꾸지 않았습니다.
-          </p>
-        </div>
-        <div class="walkthrough" aria-roledescription="캐러셀" aria-label="쉬운AI 실제 화면 둘러보기" tabindex="0">
-          <div class="walkthrough__topline"><span>실제 앱 화면 · 1280 × 800 캡처</span><strong data-carousel-count aria-live="polite">1 / 9</strong></div>
-          <div class="walkthrough__viewport">
-            <div class="walkthrough__track">
-              <figure class="walkthrough__slide">
-                <img src="assets/showcase-home.png" width="1280" height="800" alt="쉬운AI 첫 화면에서 사용할 AI 도구를 선택하고 연결하는 모습" />
-                <figcaption><span>01 · AI 연결</span><strong>터미널을 열지 않고, 쓰는 AI를 선택합니다.</strong><p>이미 사용하는 CLI를 확인하고 앱 안에서 연결 상태를 봅니다.</p><a href="assets/showcase-home.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
-              </figure>
-              <figure class="walkthrough__slide">
-                <img src="assets/showcase-design.png" width="1280" height="800" alt="51가지 MD 기반 디자인을 실제 PPT 표지 모양으로 고르는 화면" />
-                <figcaption><span>02 · 디자인 선택</span><strong>색 이름 대신 실제 슬라이드를 보고 고릅니다.</strong><p>16:9 표지 미리보기로 발표 분위기를 먼저 확인합니다.</p><a href="assets/showcase-design.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
-              </figure>
-              <figure class="walkthrough__slide">
-                <img src="assets/showcase-worship.png" width="1280" height="800" alt="교회 이름과 예배 일시를 입력하는 화면" />
-                <figcaption><span>03 · 예배 정보</span><strong>이번 주 예배 정보를 차례대로 채웁니다.</strong><p>교회 이름과 날짜를 입력하면 표지와 예배 자료에 반영됩니다.</p><a href="assets/showcase-worship.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
-              </figure>
-              <figure class="walkthrough__slide">
-                <img src="assets/showcase-sermon.png" width="1280" height="800" alt="설교 원문을 붙여넣고 요점을 정리하는 단계" />
-                <figcaption><span>04 · 설교 원문</span><strong>요점을 미리 쓰지 않아도 됩니다.</strong><p>설교 원문을 넣고 AI가 추린 발표 요점과 근거를 확인합니다.</p><a href="assets/showcase-sermon.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
-              </figure>
-              <figure class="walkthrough__slide">
-                <img src="assets/showcase-order.png" width="1280" height="800" alt="예배 순서와 담당자를 입력하는 단계" />
-                <figcaption><span>05 · 예배 순서</span><strong>교회가 실제 진행하는 순서를 담습니다.</strong><p>순서와 담당자를 확인한 뒤 슬라이드에 적용합니다.</p><a href="assets/showcase-order.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
-              </figure>
-              <figure class="walkthrough__slide">
-                <img src="assets/showcase-ai-font.png" width="1280" height="800" alt="AI 연결과 글꼴을 선택하는 화면" />
-                <figcaption><span>06 · AI와 글꼴</span><strong>쓰는 AI와 발표 글꼴을 고릅니다.</strong><p>원문 요점을 AI로 만들고 PC 글꼴이나 올린 글꼴을 선택합니다.</p><a href="assets/showcase-ai-font.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
-              </figure>
-              <figure class="walkthrough__slide">
-                <img src="assets/showcase-review.png" width="1280" height="800" alt="완성된 16대9 슬라이드를 한 장씩 확인하는 화면" />
-                <figcaption><span>07 · 결과 확인</span><strong>내보내기 전에 슬라이드를 직접 봅니다.</strong><p>목록에서 한 장씩 선택하고 발표 화면의 구성을 살펴봅니다.</p><a href="assets/showcase-review.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
-              </figure>
-              <figure class="walkthrough__slide">
-                <img src="assets/showcase-editorial.png" width="1600" height="900" alt="실제 PowerPoint에서 연 SOFT_FUSION 에디토리얼 PPT의 편집 가능한 표지 슬라이드" />
-                <figcaption><span>08 · 에디토리얼 PPT</span><strong>같은 내용으로 다른 발표 스타일을 고릅니다.</strong><p>실제 PowerPoint 출력 화면입니다. 8개 테마 중 하나를 골라 편집 가능한 PPTX로 저장합니다.</p><a href="assets/showcase-editorial.png" target="_blank" rel="noopener">슬라이드 전체 보기 ↗</a></figcaption>
-              </figure>
-              <figure class="walkthrough__slide">
-                <img src="assets/showcase-correct.png" width="1280" height="800" alt="선택한 슬라이드의 문장을 채팅으로 수정하는 화면" />
-                <figcaption><span>09 · 채팅 교정</span><strong>마음에 안 드는 문장은 바로 고칩니다.</strong><p>슬라이드 한 장을 골라 대화로 수정한 뒤 PPTX 또는 HTML로 저장합니다.</p><a href="assets/showcase-correct.png" target="_blank" rel="noopener">원본 크기로 보기 ↗</a></figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="walkthrough__controls"><button type="button" class="walkthrough__arrow" data-carousel-prev aria-label="이전 화면" disabled>← 이전 화면</button><div class="walkthrough__dots" data-carousel-dots aria-label="화면 선택"></div><button type="button" class="walkthrough__arrow walkthrough__arrow--next" data-carousel-next aria-label="다음 화면">다음 화면 →</button></div>
-        </div>
-      </section>
-      <section class="section value" id="limits">
-        <div class="section-heading">
-          <p class="eyebrow">USEFUL, WITH CLEAR LIMITS</p>
-          <h2>왜 쓰는지, 어디까지 되는지</h2>
-        </div>
-        <div class="value-columns">
-          <div class="value-card good">
-            <span class="value-icon">✓</span>
-            <h3>지금 도움이 되는 점</h3>
-            <ul>
-              <li>
-                CLI 명령을 외우지 않고 앱에서 AI를 선택하고 설치할 수 있습니다.
-              </li>
-              <li>설교 원문에서 요점을 만들고 근거 문장을 함께 확인합니다.</li>
-              <li>주보 PDF/HWPX를 읽고, 실제 예배 순서와 교회 소식을 가져옵니다.</li>
-              <li>AI가 원문 분량을 보고 장수를 제안하고 그 이유를 보여 줍니다. 직접 정할 수도 있습니다.</li>
-              <li>고른 그림 스타일로 표지·설교 제목·요점 화면에 그림을 그려 넣습니다.</li>
-              <li>비교·단계·시간선·질문과 답·성경 인물 이야기 등 10가지 레이아웃과 8개 색상 테마, 사진형 템플릿을 고를 수 있습니다.</li>
-              <li>결과 화면에서 대화로 PPT 전체 또는 한 장을 고칩니다.</li>
-              <li>
-                예배 순서와 담당을 교회가 실제 진행하는 순서대로 넣습니다.
-              </li>
-              <li>
-                PPTX의 텍스트와 정보 카드는 PowerPoint에서 다시 편집할 수
-                있습니다.
-              </li>
-              <li>글꼴 파일 추가와 한 장씩 채팅 교정을 지원합니다.</li>
-            </ul>
-          </div>
-          <div class="value-card caution">
-            <span class="value-icon">i</span>
-            <h3>사용 전에 알아둘 점</h3>
-            <ul>
-              <li>
-                AI 사용에는 해당 CLI 계정의 로그인과 사용량이 필요합니다. 계정
-                한도에 도달하면 다른 AI를 선택하거나 직접 입력할 수 있습니다.
-              </li>
-              <li>
-                51개 MD를 PPT용 색과 배치로 변환합니다. 원문 이미지의 모든
-                세부 스타일을 그대로 복제하지는 않습니다.
-              </li>
-              <li>
-                그림 생성에는 Codex 설치와 로그인이 필요하고, 그 계정의 사용량이
-                쓰입니다. 그림 한 장에 30초~1분쯤 걸립니다.
-              </li>
-              <li>0.16.0는 Windows 설치 파일만 있습니다. Linux는 0.11.0이 최신입니다.</li>
-              <li>
-                Mac 설치 파일은 서명·공증 전까지 macOS의 보안 확인이 필요할 수
-                있습니다.
-              </li>
-              <li>
-                Windows 설치 파일도 현재 코드 서명 전이라 SmartScreen의 보안
-                확인이 표시될 수 있습니다.
-              </li>
-            </ul>
+        <div class="steps__body">
+          <ol class="steps__list" role="tablist" aria-label="만드는 순서">
+            <li><button type="button" role="tab" aria-selected="true" aria-controls="step-view" data-shot="assets/showcase-sermon.png" data-alt="설교 원문을 붙여 넣는 화면"><b>원고 넣기</b><span>붙여 넣거나 한글·워드·PDF 파일을 고릅니다. 요점은 미리 안 써도 됩니다.</span></button></li>
+            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/showcase-order.png" data-alt="예배 순서와 담당자를 입력하는 화면"><b>예배 순서·광고</b><span>주보 파일을 불러오면 순서와 광고가 채워집니다. 글자는 그대로 들어갑니다.</span></button></li>
+            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/showcase-design.png" data-alt="발표 디자인과 그림 화풍을 고르는 화면"><b>디자인 고르기</b><span>발표 디자인과 그림 화풍을 실제 슬라이드 모양을 보며 고릅니다.</span></button></li>
+            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/showcase-review.png" data-alt="AI가 만든 슬라이드를 한 장씩 확인하는 화면"><b>AI가 짜고 그리기</b><span>몇 장이 알맞은지 AI가 이유와 함께 정하고, 그림은 고른 화풍으로 그립니다.</span></button></li>
+            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/editor-ai.png" data-alt="편집기에서 AI에게 고쳐 달라고 한 화면"><b>손질하고 저장</b><span>편집기에서 고친 뒤 PowerPoint 파일로 저장합니다. 교회 PC에서 그대로 열립니다.</span></button></li>
+          </ol>
+          <div class="steps__view" id="step-view" role="tabpanel">
+            <img src="assets/showcase-sermon.png" alt="설교 원문을 붙여 넣는 화면" width="1280" height="800" loading="lazy" />
           </div>
         </div>
       </section>
-      <section class="section support-info" id="support">
-        <div class="section-heading">
-          <p class="eyebrow">BEFORE YOU START</p>
-          <h2>알아두실 점</h2>
-          <p>실제 예배에서 쓰기 전에 확인할 내용과 도움을 받을 곳을 모았습니다.</p>
+
+      <!-- 편집기 -->
+      <section class="editor" id="editor" aria-labelledby="editor-title">
+        <div class="head">
+          <p class="kicker">0.16.0에서 새로 · 편집기</p>
+          <h2 id="editor-title">손으로 고치든, 말로 부탁하든</h2>
+          <p>AI가 만든 결과가 끝이 아닙니다. 캔바처럼 끌어서 옮기고, 필요한 것은 넣고, 손이 많이 가는 일은 AI에게 맡기세요.</p>
         </div>
-        <div class="support-info__grid">
-          <article class="support-info__card">
-            <h3><span aria-hidden="true">△</span> 예배 자료와 AI 사용</h3>
-            <p>설교 원문과 작업 내용은 이 PC에 저장됩니다. AI 기능을 실행하면 필요한 내용이 선택한 AI 서비스로 전달되며, 그 계정의 사용량 한도가 적용됩니다. 성경 본문과 예배 순서는 저장 전에 직접 확인해 주세요.</p>
-          </article>
-          <article class="support-info__card">
-            <h3><span aria-hidden="true">✦</span> 오류나 개선 의견이 있나요?</h3>
-            <p>실제로 사용하다 막힌 화면이나 원하는 PPT 기능을 알려주세요. 어떤 단계에서 문제가 생겼는지 적어 주시면 확인에 도움이 됩니다.</p>
-            <a class="support-info__contact" href="https://open.kakao.com/o/g8xjXlIg" target="_blank" rel="noopener">카카오 오픈채팅으로 연락하기 ↗</a>
-            <p class="support-info__hint">카카오톡으로 바로 이야기할 수 있습니다. <a href="https://github.com/backhung65-cpu/easyai-download/issues/new" target="_blank" rel="noopener">GitHub에서 문제 기록하기 ↗</a></p>
-          </article>
-        </div>
-        <div class="support-info__donation">
-          <h3>쉬운AI 개발 후원</h3>
-          <p>후원은 선택입니다. 무료로 사용하셔도 됩니다.</p>
-          <div class="support-info__account"><span>카카오뱅크 <strong>3333-14-3131738</strong> · 백형진</span><button type="button" data-copy-account="3333143131738">계좌번호 복사</button></div>
-          <p class="support-info__copy-status" role="status" aria-live="polite"></p>
+        <figure class="editor__shot">
+          <img src="assets/editor-ai.png" alt="편집기 화면. 가운데 슬라이드에서 AI가 고친 제목과 본문이 주황 점선으로 표시되고, 오른쪽 창에 '3곳을 고쳤습니다 · 되돌리기'가 보입니다." width="1440" height="776" loading="lazy" />
+        </figure>
+        <div class="editor__grid">
+          <div>
+            <h3>직접 고치기</h3>
+            <p>글상자·도형·그림·영상을 넣고, 끌어서 옮기고 모서리로 크기를 바꿉니다. 가운데와 다른 요소에 맞춰 붙는 맞춤선이 있어 줄이 반듯합니다. 글은 두 번 눌러 고칩니다.</p>
+          </div>
+          <div>
+            <h3>AI에게 부탁하기</h3>
+            <p>“이 쪽 제목을 크게”, “모든 쪽 제목 색을 남색으로”처럼 말하면 AI가 고칩니다. 고친 곳은 주황 점선으로 보이고, 마음에 안 들면 되돌리기 한 번이면 됩니다.</p>
+          </div>
+          <div>
+            <h3>AI 그림 넣기</h3>
+            <p>“새벽 호숫가에서 종이배를 띄우는 손”처럼 적으면 고른 화풍으로 그려서 지금 쪽에 넣습니다. 한 장에 1분쯤 걸립니다.</p>
+          </div>
+          <div>
+            <h3>쪽 정리</h3>
+            <p>쪽을 넣고, 복제하고, 순서를 바꿉니다. 배경색·배경 그림·발표자 노트도 여기서 고칩니다. 고치는 대로 자동 저장됩니다.</p>
+          </div>
         </div>
       </section>
-      <section class="section download" id="download">
-        <div class="section-heading">
-          <p class="eyebrow">DOWNLOAD · v0.16.0</p>
-          <h2>내 컴퓨터에 맞게 받으세요</h2>
-          <p>
-            버튼은 실제 배포 파일이 준비된 운영체제에서만 활성화됩니다. 설치 후
-            사용할 AI 계정에 로그인하세요.
-          </p>
+
+      <!-- 지키는 것 -->
+      <section class="promise" id="promise" aria-labelledby="promise-title">
+        <div class="head">
+          <p class="kicker">지키는 것</p>
+          <h2 id="promise-title">예배 자료라서 더 조심합니다</h2>
         </div>
-        <div class="download-grid">
-          <article>
-            <span class="platform-icon">⊞</span>
-            <h3>Windows</h3>
-            <p>Windows 10/11 · x64</p>
-            <a
-              class="button button-primary download-link"
-              data-asset="windows"
-              aria-disabled="true"
-              >준비 중</a
-            ><small>설치 프로그램 · .exe · 파일을 열어 설치</small>
+        <dl class="promise__list">
+          <div><dt>사실은 글자 그대로</dt><dd>교회 이름, 날짜, 성경 범위, 예배 순서와 담당, 광고는 한 글자도 바꾸지 않습니다. 다 만든 뒤 대조해서 다르면 알려 줍니다.</dd></div>
+          <div><dt>원고에 없는 말은 쓰지 않습니다</dt><dd>설교 슬라이드는 원고의 문장에 근거합니다. 없는 성경 구절이나 숫자를 지어내지 않습니다.</dd></div>
+          <div><dt>내 PC에 저장</dt><dd>원고와 작업은 이 PC에 남습니다. AI를 쓸 때만 필요한 내용이 고른 AI 회사로 갑니다.</dd></div>
+          <div><dt>쓸수록 나아집니다</dt><dd>고친 내용과 고른 디자인에서 배운 것을 기록해 두고, 다음 주 PPT를 만들 때 먼저 읽습니다.</dd></div>
+          <div><dt>예배당 뒷자리 기준</dt><dd>본문은 18pt 이상, 제목은 28pt 이상으로 만듭니다. 작아지면 편집기가 알려 줍니다.</dd></div>
+          <div><dt>따로 드는 돈 없음</dt><dd>이미 쓰는 Claude·Codex 구독으로 움직입니다. API 키를 만들 필요가 없습니다.</dd></div>
+        </dl>
+      </section>
+
+      <!-- 후원 -->
+      <section class="support" id="support" aria-labelledby="support-title">
+        <div class="support__inner">
+          <p class="kicker kicker--gold">개발 · 목회 AI 연구소</p>
+          <h2 id="support-title">쉬운AI는 무료입니다</h2>
+          <p>작은 교회도 매주 좋은 예배 화면을 쓸 수 있도록 만들고 있습니다. 도움이 되셨다면 후원으로 함께해 주세요. 후원하지 않으셔도 모든 기능을 그대로 쓰실 수 있습니다.</p>
+          <div class="account">
+            <span>카카오뱅크 <strong>3333-14-3131738</strong> · 백형진</span>
+            <button type="button" data-copy-account="3333143131738">계좌번호 복사</button>
+          </div>
+          <p class="account__status" role="status" aria-live="polite"></p>
+          <p class="support__contact">쓰다가 막히거나 바라는 기능이 있으면 <a href="https://open.kakao.com/o/g8xjXlIg" target="_blank" rel="noopener">카카오 오픈채팅 ↗</a>이나 <a href="https://github.com/backhung65-cpu/easyai-download/issues/new" target="_blank" rel="noopener">GitHub 문제 기록 ↗</a>으로 알려 주세요.</p>
+        </div>
+      </section>
+
+      <!-- 내려받기 -->
+      <section class="download" id="download" aria-labelledby="download-title">
+        <div class="head">
+          <p class="kicker">내려받기 · <span data-version>v0.16.0</span></p>
+          <h2 id="download-title">이 PC에 설치하기</h2>
+        </div>
+        <div class="download__grid">
+          <article class="dl dl--main">
+            <h3>Windows 10 · 11</h3>
+            <p>64비트 · 설치 프로그램(.exe) · 약 190MB</p>
+            <a class="btn btn--ink dl__link" data-asset="windows" data-label="Windows용 내려받기" aria-disabled="true">준비 중</a>
+            <ol class="dl__how">
+              <li>받은 파일을 엽니다.</li>
+              <li>“Windows의 PC 보호” 창이 뜨면 <b>추가 정보 → 실행</b>을 누릅니다. 아직 코드 서명 전이라 나오는 창입니다.</li>
+              <li>설치가 끝나면 첫 화면에서 쓸 AI(Claude·Codex 등)를 고르고 로그인합니다.</li>
+            </ol>
           </article>
-          <article>
-            <span class="platform-icon">●</span>
-            <h3>Mac · Apple Silicon</h3>
-            <p>M1 이상 · arm64</p>
-            <a
-              class="button button-primary download-link"
-              data-asset="macArm"
-              aria-disabled="true"
-              >준비 중</a
-            ><small>디스크 이미지 · .dmg · 앱 폴더로 이동</small>
+          <article class="dl">
+            <h3>Mac</h3>
+            <p>아직 0.16.0이 없습니다. 준비되면 이곳에 올립니다.</p>
+            <a class="dl__alt" data-asset="macArm" data-label="Apple Silicon용 내려받기" aria-disabled="true">Apple Silicon 준비 중</a>
+            <a class="dl__alt" data-asset="macIntel" data-label="Intel Mac용 내려받기" aria-disabled="true">Intel 준비 중</a>
           </article>
-          <article>
-            <span class="platform-icon">●</span>
-            <h3>Mac · Intel</h3>
-            <p>Intel 프로세서 · x64</p>
-            <a
-              class="button button-primary download-link"
-              data-asset="macIntel"
-              aria-disabled="true"
-              >준비 중</a
-            ><small>디스크 이미지 · .dmg · 앱 폴더로 이동</small>
-          </article>
-          <article>
-            <span class="platform-icon">◆</span>
+          <article class="dl">
             <h3>Linux</h3>
-            <p>64비트 · x64 · 이전 버전 0.11.0</p>
-            <a
-              class="button button-primary download-link"
-              data-asset="linuxAppImage"
-              aria-disabled="true"
-              >준비 중</a
-            ><a
-              class="download-alt download-link"
-              data-asset="linuxDeb"
-              aria-disabled="true"
-              >.deb 준비 중</a
-            ><small>Ubuntu/Debian은 .deb · 다른 배포판은 AppImage</small>
+            <p>이전 버전 0.11.0입니다. 편집기는 들어 있지 않습니다.</p>
+            <a class="dl__alt" data-asset="linuxAppImage" data-label="AppImage 내려받기" aria-disabled="true">AppImage 준비 중</a>
+            <a class="dl__alt" data-asset="linuxDeb" data-label=".deb 내려받기" aria-disabled="true">.deb 준비 중</a>
           </article>
         </div>
-        <p class="download-note">
-          Windows 화면에서 확인한 기능을 기반으로 배포합니다. 다른
-          운영체제에서는 글꼴과 AI CLI 로그인 방식이 다를 수 있습니다.
-          AppImage는 실행 권한을 허용해야 열립니다. 문제가 있으면 배포 기록과
-          SHA-256 확인값을 참고하세요.
-        </p>
-        <a class="release-link" id="release-link" href="#download" hidden
-          >배포 기록과 파일 확인값 보기 ↗</a
-        >
+        <div class="limits">
+          <h3>알아두실 점</h3>
+          <ul>
+            <li>AI 기능은 고른 AI 계정의 로그인과 사용량이 필요합니다. 한도에 닿으면 잠시 뒤 다시 하거나 다른 AI를 고르세요.</li>
+            <li>그림은 Codex 로그인이 필요하고 한 장에 30초~1분 걸립니다.</li>
+            <li>편집기는 쉬운AI가 만든 PPT를 엽니다. 다른 곳에서 만든 PPT 파일 열기, 표·차트는 아직 안 됩니다.</li>
+            <li>AI는 실수할 수 있습니다. 설교 원문과 예배 순서는 예배 전에 꼭 사람이 확인해 주세요.</li>
+          </ul>
+          <a class="release" id="release-link" href="#download" hidden>버전 기록과 파일 확인값 보기 ↗</a>
+        </div>
       </section>
     </main>
-    <footer class="site-footer">
-      <span>쉬운AI · 목회 AI 연구소</span
-      ><span>설교 원문과 예배 순서는 반드시 사람이 확인해 주세요.</span
-      ><a href="#top">맨 위로 ↑</a>
+
+    <footer class="foot">
+      <span class="foot__mark">쉬운AI</span>
+      <span>개발 · 목회 AI 연구소</span>
+      <a href="#main">맨 위로 ↑</a>
     </footer>
   </body>
 </html>
