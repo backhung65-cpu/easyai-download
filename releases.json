@@ -1,8 +1,8 @@
 {
-  "version": "0.26.0",
-  "releaseUrl": "https://github.com/backhung65-cpu/easyai-download/releases/tag/v0.26.0",
+  "version": "0.27.0",
+  "releaseUrl": "https://github.com/backhung65-cpu/easyai-download/releases/tag/v0.27.0",
   "assets": {
-    "windows": "https://github.com/backhung65-cpu/easyai-download/releases/download/v0.26.0/EasyAI-0.26.0-windows-x64.exe",
+    "windows": "https://github.com/backhung65-cpu/easyai-download/releases/download/v0.27.0/EasyAI-0.27.0-windows-x64.exe",
     "macArm": "",
     "macIntel": "",
     "linuxAppImage": "https://github.com/backhung65-cpu/easyai-download/releases/download/v0.11.0/EasyAI-0.11.0-linux-x86_64.AppImage",
