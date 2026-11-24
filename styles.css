@@ -173,3 +173,20 @@ section { padding: 104px max(20px, calc((100vw - var(--wrap)) / 2)); }
   .slide { animation: none; opacity: 1; transform: rotate(1deg); }
   .steps__list span { transition: none; }
 }
+
+/* 우리 교회(스킬 보관함): 편집기 구역과 같은 짜임, 바탕만 흰색으로 번갈아 */
+.church { background: var(--white); }
+.church__shot { max-width: 880px; margin-left: auto; margin-right: auto; }
+/* 카드뉴스(쉬운주보 쪽과 같은 모양) */
+.cards { background: var(--hymnal); color: #fff; }
+.cards .head h2 { color: #fff; }
+.cards .head p:not(.kicker) { color: rgba(255, 255, 255, .78); }
+.cards .kicker { color: var(--gilt-soft); }
+.cards__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.cards__grid figure { margin: 0; }
+.cards__grid img { border-radius: 10px; box-shadow: 0 20px 40px rgba(0, 0, 0, .28); }
+.cards__grid figcaption { margin-top: 12px; text-align: center; }
+.cards__grid figcaption a { color: var(--gilt-soft); font-weight: 700; font-size: 15px; }
+.cards__all { margin-top: 36px; text-align: center; }
+.cards__all .btn { border-color: var(--gilt-soft); color: #fff; }
+@media (max-width: 1000px) { .cards__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

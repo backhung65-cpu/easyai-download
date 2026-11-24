@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="쉬운 PPT는 설교 원고와 예배 순서로 주일 예배 PPT를 만들고, 캔바처럼 직접 고치거나 AI에게 말로 고쳐 달라고 할 수 있는 무료 Windows 프로그램입니다." />
+    <meta name="description" content="쉬운 PPT는 설교 원고와 예배 순서로 주일 예배 PPT를 만드는 무료 Windows 프로그램입니다. AI가 제작 계획을 먼저 보여 주고, 만든 뒤 스스로 보고 다듬으며, 우리 교회 스킬을 배워 갑니다." />
     <meta name="theme-color" content="#16443A" />
     <title>쉬운 PPT — 설교 원고가 예배 화면이 됩니다</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,8 +20,9 @@
       <nav aria-label="주 메뉴">
         <a href="#steps">만드는 순서</a>
         <a href="#editor">편집기</a>
+        <a href="#church">우리 교회</a>
+        <a href="#cards">카드뉴스</a>
         <a href="bulletin.html">쉬운주보</a>
-        <a href="#promise">지키는 것</a>
         <a href="#support">후원</a>
         <a class="btn btn--ink btn--small" href="#download">내려받기</a>
       </nav>
@@ -33,13 +34,13 @@
         <div class="hero__copy">
           <p class="kicker">주일 예배 PPT · Windows · 무료</p>
           <h1>설교 원고가<br /><span class="nowrap">예배 화면이 됩니다</span></h1>
-          <p class="lead">원고와 이번 주 예배 순서를 넣으면, AI가 몇 장으로 만들지 정하고 슬라이드를 짜고 그림까지 그립니다. 마지막 손질은 편집기에서 직접 하거나 AI에게 말로 부탁하세요.</p>
+          <p class="lead">원고와 이번 주 예배 순서를 넣으면, AI가 먼저 제작 계획을 보여 드립니다. 확인하시면 슬라이드를 짜고 그림을 그린 뒤 스스로 보고 다듬어 편집기로 엽니다. 마지막 손질은 직접 하거나 AI에게 말로 부탁하세요.</p>
           <div class="hero__actions">
             <a class="btn btn--ink" href="#download" data-asset="windows" data-keep-label>Windows용 내려받기 <span class="btn__meta" data-version>v0.33.0</span></a>
             <a class="btn btn--line" href="#steps">어떻게 만드는지 보기</a>
           </div>
           <p class="hero__note">이미 쓰는 Claude·Codex 계정으로 움직입니다. 원고와 예배 정보는 이 PC에만 저장됩니다.</p>
-          <p class="hero__note"><b>새로:</b> 주보도 만들어요 — <a href="bulletin.html">쉬운주보 보기 →</a></p>
+          <p class="hero__note"><b>새로:</b> 제작 계획 · 스킬 보관함 — <a href="#cards">카드뉴스로 보기 →</a> · 주보도 만들어요 — <a href="bulletin.html">쉬운주보 보기 →</a></p>
         </div>
 
         <figure class="manuscript">
@@ -71,9 +72,9 @@
           <ol class="steps__list" role="tablist" aria-label="만드는 순서">
             <li><button type="button" role="tab" aria-selected="true" aria-controls="step-view" data-shot="assets/showcase-sermon.png" data-alt="설교 원문을 붙여 넣는 화면"><b>원고 넣기</b><span>붙여 넣거나 한글·워드·PDF 파일을 고릅니다. 지난주 PPT를 <b>이번 주로 복제</b>하면 설교만 새로 넣으면 됩니다.</span></button></li>
             <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/showcase-order.png" data-alt="예배 순서와 담당자를 입력하는 화면"><b>예배 순서·광고</b><span>주보를 불러오면 순서·내용(찬송·본문)·담당이 주보 그대로 채워지고, PPT도 주보 순서대로 놓입니다(광고 자리에 교회 소식, 성경봉독 자리에 본문). 교회 로고는 표지와 마침 화면에 들어갑니다.</span></button></li>
-            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/showcase-design.png" data-alt="발표 디자인과 그림 화풍을 고르는 화면"><b>디자인 고르기</b><span>발표 디자인과 그림 화풍을 실제 슬라이드 모양을 보며 고릅니다. 우리 교회 디자인 MD나 스킬 ZIP을 올리면 색·모서리·글꼴까지 그대로 씁니다.</span></button></li>
-            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/showcase-review.png" data-alt="AI가 만든 슬라이드를 한 장씩 확인하는 화면"><b>AI가 짜고 그리기</b><span>몇 장이 알맞은지 AI가 이유와 함께 정하고, 그림은 고른 화풍으로 그립니다. 찬송·교독문·성경 본문은 웹에서 찾아 확인하고 출처와 함께 넣습니다.</span></button></li>
-            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/editor-ai.png" data-alt="편집기에서 AI에게 고쳐 달라고 한 화면"><b>손질하고 저장</b><span>AI가 만든 쪽마다 글을 그 자리에서 바로 고치고, 편집기에서 손본 뒤 PowerPoint 파일로 저장합니다. 중요한 글이 먼저 떠오르는 애니메이션이 함께 들어갑니다.</span></button></li>
+            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/showcase-design.png" data-alt="발표 디자인과 그림 화풍을 고르는 화면"><b>디자인 고르기</b><span>발표 디자인과 그림 화풍을 실제 슬라이드 모양을 보며 <b>한 번만</b> 고릅니다(디자인 그대로 · 사진형 템플릿). 저장할 때 다시 고르지 않습니다. 우리 교회 디자인 MD를 올리면 색·모서리·글꼴까지 그대로 씁니다.</span></button></li>
+            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/ppt/plan.png" data-alt="AI가 세운 제작 계획을 확인하는 화면: 목적, 청중, 톤, 디자인 방향, 그림 방침"><b>제작 계획 확인</b><span>AI가 원고를 읽고 목적·톤·디자인 방향·설교 쪽 흐름을 한 화면에 보여 드립니다. 칸을 고치거나 말로 고쳐 달라고 한 뒤 [이대로 만들기]를 누르면, 그 순서와 쪽 수대로 만듭니다. 바쁜 주에는 계획 없이 바로 만들 수도 있습니다.</span></button></li>
+            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/ppt/editor.png" data-alt="만들기가 끝나 바로 열린 편집기. 오른쪽 AI 칸에 '쪽 그림을 보고 다듬었습니다: 찾은 문제 11개 → 남은 문제 0개'가 보입니다."><b>만들고 스스로 다듬기</b><span>계획대로 슬라이드를 짜고 그림을 그린 뒤, 쪽마다 그림으로 뽑아 넘친 글·안 읽히는 색을 AI가 직접 보고 고칩니다. 찬송·교독문·성경 본문은 확인해 출처와 함께 넣고, 끝나면 바로 편집기가 열립니다.</span></button></li>
           </ol>
           <div class="steps__view" id="step-view" role="tabpanel">
             <img src="assets/showcase-sermon.png" alt="설교 원문을 붙여 넣는 화면" width="1280" height="800" loading="lazy" />
@@ -84,9 +85,9 @@
       <!-- 편집기 -->
       <section class="editor" id="editor" aria-labelledby="editor-title">
         <div class="head">
-          <p class="kicker">0.16.0에서 새로 · 편집기</p>
+          <p class="kicker">편집기</p>
           <h2 id="editor-title">손으로 고치든, 말로 부탁하든</h2>
-          <p>AI가 만든 결과가 끝이 아닙니다. 캔바처럼 끌어서 옮기고, 필요한 것은 넣고, 손이 많이 가는 일은 AI에게 맡기세요.</p>
+          <p>만들기가 끝나면 바로 편집기가 열립니다. 캔바처럼 끌어서 옮기고, 필요한 것은 넣고, 손이 많이 가는 일은 AI에게 맡기세요. 다 되면 [PPT로 저장]을 누릅니다.</p>
         </div>
         <figure class="editor__shot">
           <img src="assets/editor-ai.png" alt="편집기 화면. 가운데 슬라이드에서 AI가 고친 제목과 본문이 주황 점선으로 표시되고, 오른쪽 창에 '3곳을 고쳤습니다 · 되돌리기'가 보입니다." width="1440" height="776" loading="lazy" />
@@ -94,11 +95,11 @@
         <div class="editor__grid">
           <div>
             <h3>직접 고치기</h3>
-            <p>글상자·도형·그림·영상을 넣고, 끌어서 옮기고 모서리로 크기를 바꿉니다. 맞춤선이 있어 줄이 반듯합니다. 쪽은 Shift·Ctrl로 여러 개 골라 한꺼번에 끌어 옮기거나 지우고, 그림의 흰 배경은 투명하게 지웁니다.</p>
+            <p>글상자·도형·그림·영상을 넣고, 끌어서 옮기고 모서리로 크기를 바꿉니다. 글은 Enter로 줄을 바꾸고, 고른 낱말·줄만 크기·색·굵게·글꼴을 바꿉니다. 맞춤선이 있어 줄이 반듯합니다.</p>
           </div>
           <div>
             <h3>AI에게 부탁하기</h3>
-            <p>“이 쪽 제목을 크게”, “모든 쪽 제목 색을 남색으로”처럼 말하면 AI가 고칩니다. 고친 곳은 주황 점선으로 보이고, 마음에 안 들면 되돌리기 한 번이면 됩니다.</p>
+            <p>“이 쪽 제목을 크게”, “요점을 한 장 더”처럼 말하면 AI가 고칠 곳(이 쪽·전체)을 알아서 고르고, 새 쪽은 원고에 있는 말로 채웁니다. 고친 곳은 주황 점선으로 보이고, 되돌리기 한 번이면 됩니다.</p>
           </div>
           <div>
             <h3>AI 그림 넣기</h3>
@@ -111,6 +112,56 @@
         </div>
       </section>
 
+      <!-- 우리 교회: 스킬 보관함·배우는 공책 -->
+      <section class="editor church" id="church" aria-labelledby="church-title">
+        <div class="head">
+          <p class="kicker">우리 교회 · 스킬 보관함</p>
+          <h2 id="church-title">쓸수록 우리 교회를 닮아 갑니다</h2>
+          <p>교회마다 다른 표기·글자 크기·색을 <b>스킬</b>로 넣어 두면 AI가 PPT를 만들 때마다 지킵니다. AI 고르기·움직임·찬송 확인 같은 설정도 [우리 교회] 한 곳에 모았습니다.</p>
+        </div>
+        <figure class="editor__shot church__shot">
+          <img src="assets/ppt/skills.png" alt="스킬 보관함 화면. 우리 교회 스킬 2개(우리 교회 습관·우리 교회 표기법)와 기본 스킬 3개가 카드로 보이고, 카드마다 켬·쓰는 단계·내용 보기가 있습니다." width="1003" height="787" loading="lazy" />
+        </figure>
+        <div class="editor__grid">
+          <div>
+            <h3>스킬 보관함</h3>
+            <p>문서의 <b>쉬운 PPT 스킬</b> 폴더에 MD 파일을 넣기만 하면 스킬이 됩니다. 켜고 끄고, 쓰는 단계(계획·슬라이드 쓰기, 보고 다듬기, 편집기, 그림)를 고릅니다.</p>
+          </div>
+          <div>
+            <h3>배우는 공책</h3>
+            <p>편집기에서 반복해서 고친 것(예: 본문을 더 크게)을 AI가 찾아 제안합니다. [스킬에 적기]를 누르면 다음 주부터 처음부터 그렇게 만듭니다.</p>
+          </div>
+          <div>
+            <h3>기본 스킬도 보입니다</h3>
+            <p>프로그램에 들어 있는 규칙(예배 PPT 만들기·찬송 확인·디자인 검수)이 무엇을 하는지 보이고, 복사해서 우리 교회에 맞게 고쳐 쓸 수 있습니다.</p>
+          </div>
+          <div>
+            <h3>참고 자료 폴더</h3>
+            <p>예시 PPT·그림·교회 소개 글을 넣어 두면 AI가 디자인과 그림, 글 쓰는 법을 견본처럼 따릅니다. 작업 일지로 AI가 한 일과 걸린 시간도 볼 수 있습니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 카드뉴스: 한눈에 보고, 받아서 나누기 -->
+      <section class="cards" id="cards" aria-labelledby="cards-title">
+        <div class="head">
+          <p class="kicker">카드뉴스 4장</p>
+          <h2 id="cards-title">한눈에 보는 쉬운 PPT</h2>
+          <p>목회자 단톡방·밴드·인스타에 그대로 나눠 주세요. 그림을 누르면 크게 보이고, 아래 단추로 받을 수 있습니다.</p>
+        </div>
+        <div class="cards__grid">
+          <figure><a href="assets/ppt/cardnews-1.jpg" target="_blank" rel="noopener"><img src="assets/ppt/cardnews-1.jpg" alt="카드뉴스 1: 설교 원고만 넣으면 예배 PPT가 완성됩니다. AI가 계획을 세우고, 만들고, 스스로 다듬는 교회를 위한 무료 PPT 프로그램." width="1080" height="1350" loading="lazy" /></a>
+            <figcaption><a href="assets/ppt/cardnews-1.jpg" download="쉬운PPT-카드뉴스-1.jpg">1장 받기 ↓</a></figcaption></figure>
+          <figure><a href="assets/ppt/cardnews-2.jpg" target="_blank" rel="noopener"><img src="assets/ppt/cardnews-2.jpg" alt="카드뉴스 2: 만들기 전에, AI가 계획부터 보여 드려요. 목적·톤·디자인 방향·설교 쪽 흐름을 확인하고 말로 고칩니다." width="1080" height="1350" loading="lazy" /></a>
+            <figcaption><a href="assets/ppt/cardnews-2.jpg" download="쉬운PPT-카드뉴스-2.jpg">2장 받기 ↓</a></figcaption></figure>
+          <figure><a href="assets/ppt/cardnews-3.jpg" target="_blank" rel="noopener"><img src="assets/ppt/cardnews-3.jpg" alt="카드뉴스 3: 만들면 바로 편집기, AI가 직접 보고 다듬어요. 문제 11개에서 0개로." width="1080" height="1350" loading="lazy" /></a>
+            <figcaption><a href="assets/ppt/cardnews-3.jpg" download="쉬운PPT-카드뉴스-3.jpg">3장 받기 ↓</a></figcaption></figure>
+          <figure><a href="assets/ppt/cardnews-4.jpg" target="_blank" rel="noopener"><img src="assets/ppt/cardnews-4.jpg" alt="카드뉴스 4: 쓸수록 우리 교회를 닮아 갑니다. 교회 규칙을 스킬로 넣고, 고친 습관은 AI가 배워 적어 둡니다." width="1080" height="1350" loading="lazy" /></a>
+            <figcaption><a href="assets/ppt/cardnews-4.jpg" download="쉬운PPT-카드뉴스-4.jpg">4장 받기 ↓</a></figcaption></figure>
+        </div>
+        <p class="cards__all"><a class="btn btn--line" href="assets/ppt/easyppt-cardnews.zip" download>카드뉴스 4장 한 번에 받기 (ZIP)</a></p>
+      </section>
+
       <!-- 지키는 것 -->
       <section class="promise" id="promise" aria-labelledby="promise-title">
         <div class="head">
@@ -121,7 +172,7 @@
           <div><dt>사실은 글자 그대로</dt><dd>교회 이름, 날짜, 성경 범위, 예배 순서와 담당, 광고는 한 글자도 바꾸지 않습니다. 다 만든 뒤 대조해서 다르면 알려 줍니다.</dd></div>
           <div><dt>원고에 없는 말은 쓰지 않습니다</dt><dd>설교 슬라이드는 원고의 문장에 근거합니다. 없는 성경 구절이나 숫자를 지어내지 않습니다. 찬송 가사·교독문·성경 본문은 웹에서 찾아 출처와 함께 넣고, 찾지 못하면 알려 줍니다.</dd></div>
           <div><dt>내 PC에 저장</dt><dd>원고와 작업은 이 PC에 남습니다. AI를 쓸 때만 필요한 내용이 고른 AI 회사로 갑니다.</dd></div>
-          <div><dt>쓸수록 나아집니다</dt><dd>고친 내용과 고른 디자인에서 배운 것을 기록해 두고, 다음 주 PPT를 만들 때 먼저 읽습니다.</dd></div>
+          <div><dt>쓸수록 나아집니다</dt><dd>편집기에서 고친 습관을 배워 제안하고, [스킬에 적기]를 누르시면 다음 주 PPT부터 처음부터 그렇게 만듭니다.</dd></div>
           <div><dt>예배당 뒷자리 기준</dt><dd>본문은 18pt 이상, 제목은 28pt 이상으로 만듭니다. 작아지면 편집기가 알려 줍니다.</dd></div>
           <div><dt>따로 드는 돈 없음</dt><dd>이미 쓰는 Claude·Codex 구독으로 움직입니다. API 키를 만들 필요가 없습니다.</dd></div>
         </dl>
