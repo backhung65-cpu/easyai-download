@@ -22,10 +22,10 @@
     <header class="top">
       <a class="wordmark" href="#main" aria-label="쉬운주보 처음으로">쉬운주보<small>쉬운AI 안에 들어 있어요</small></a>
       <nav aria-label="주 메뉴">
-        <a href="#steps">만드는 순서</a>
+        <a href="#cards">카드뉴스</a>
+        <a href="#guide">사용법</a>
         <a href="#designs">디자인</a>
-        <a href="#features">할 수 있는 것</a>
-        <a href="index.html">쉬운AI(예배 PPT)</a>
+        <a href="index.html">쉬운AI</a>
         <a class="btn btn--ink btn--small" href="#download">내려받기</a>
       </nav>
     </header>
@@ -39,7 +39,7 @@
           <p class="lead">이번 주 예배 PPT의 순서·설교·광고로 주보 칸을 채워 드립니다. 디자인을 고르고, 캔바처럼 직접 고치거나 AI에게 말로 부탁한 뒤, 인쇄용 PDF와 휴대폰 주보로 저장하세요.</p>
           <div class="hero__actions">
             <a class="btn btn--ink" href="#download" data-asset="windows" data-keep-label>Windows용 내려받기 <span class="btn__meta" data-version>v0.32.0</span></a>
-            <a class="btn btn--line" href="#steps">어떻게 만드는지 보기</a>
+            <a class="btn btn--line" href="#guide">사용법 보기</a>
           </div>
           <p class="hero__note">쉬운AI를 설치하면 바탕화면에 <b>쉬운주보</b> 아이콘이 함께 생깁니다. 주보 내용은 이 PC에만 저장됩니다.</p>
         </div>
@@ -50,23 +50,109 @@
         </figure>
       </section>
 
-      <!-- 만드는 순서 -->
-      <section class="steps" id="steps" aria-labelledby="steps-title">
+      <!-- 카드뉴스: 한눈에 보고, 받아서 나누기 -->
+      <section class="cards" id="cards" aria-labelledby="cards-title">
         <div class="head">
-          <p class="kicker">만드는 순서</p>
-          <h2 id="steps-title">네 걸음이면 주보가 나옵니다</h2>
+          <p class="kicker">카드뉴스 4장</p>
+          <h2 id="cards-title">한눈에 보는 쉬운주보</h2>
+          <p>목회자 단톡방·밴드·인스타에 그대로 나눠 주세요. 그림을 누르면 크게 보이고, 아래 단추로 받을 수 있습니다.</p>
         </div>
-        <div class="steps__body">
-          <ol class="steps__list" role="tablist" aria-label="만드는 순서">
-            <li><button type="button" role="tab" aria-selected="true" aria-controls="step-view" data-shot="assets/bulletin/step-content.jpg" data-alt="주보 내용을 확인하는 화면. 설교 제목·본문·요점과 'AI로 요점 3개와 적용 쓰기' 단추"><b>가져오고 확인하기</b><span>이번 주 PPT에서 가져오거나 지난주 주보를 복사합니다. <b>AI가 설교 원고로 요점 3개와 적용</b>을 쓰고, 교회 소식을 읽기 쉽게 다듬습니다. 날짜·시간·숫자는 그대로 둡니다.</span></button></li>
-            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/bulletin/step-design.jpg" data-alt="판형과 색, 디자인 MD를 고르고 'AI에게 디자인 맡기기' 단추가 있는 화면"><b>판형·색 고르기</b><span>A4 양면, A4 한 장, 접는 소책자, 큰 소책자. 우리 교회 색이나 <b>디자인 MD</b>를 고르거나, <b>AI에게 디자인을 맡기면</b> 분량·절기를 보고 골라 줍니다.</span></button></li>
-            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/bulletin/step-templates.jpg" data-alt="이번 주 내용으로 미리 놓아 본 디자인 견본들"><b>디자인 고르기</b><span>전통 격식·사진 표지·색 띠 머리 등 10가지를 <b>이번 주 내용 그대로</b> 미리 보며 고릅니다. 칸 차례를 바꾸고 「우리 교회 틀」로 저장해 두면 다음 주엔 한 번에.</span></button></li>
-            <li><button type="button" role="tab" aria-selected="false" aria-controls="step-view" data-shot="assets/bulletin/step-editor.jpg" data-alt="편집기에서 주보 앞면을 고치는 화면. 오른쪽에 AI에게 부탁하는 창"><b>손질하고 저장</b><span>PPT 편집기처럼 글·그림을 직접 옮기고 고치거나 AI에게 말로 부탁합니다. 다 되면 <b>인쇄용 PDF</b>(소책자는 접는 순서 PDF도)와 <b>휴대폰 주보</b>로 저장합니다.</span></button></li>
-          </ol>
-          <div class="steps__view" id="step-view" role="tabpanel">
-            <img src="assets/bulletin/step-content.jpg" alt="주보 내용을 확인하는 화면" width="1280" height="800" loading="lazy" />
-          </div>
+        <div class="cards__grid">
+          <figure><a href="assets/bulletin/cardnews-1.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/cardnews-1.jpg" alt="카드뉴스 1: 주보 틀이 없어서 매주 막막하셨죠? 이번 주 예배 내용을 넣으면 완성된 주보가 나옵니다." width="1080" height="1350" loading="lazy" /></a>
+            <figcaption><a href="assets/bulletin/cardnews-1.jpg" download="쉬운주보-카드뉴스-1.jpg">1장 받기 ↓</a></figcaption></figure>
+          <figure><a href="assets/bulletin/cardnews-2.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/cardnews-2.jpg" alt="카드뉴스 2: 네 걸음이면 주보 끝. 가져오기, AI가 정리, 디자인 고르기, 손질·저장." width="1080" height="1350" loading="lazy" /></a>
+            <figcaption><a href="assets/bulletin/cardnews-2.jpg" download="쉬운주보-카드뉴스-2.jpg">2장 받기 ↓</a></figcaption></figure>
+          <figure><a href="assets/bulletin/cardnews-3.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/cardnews-3.jpg" alt="카드뉴스 3: 전통 격식부터 사진 표지까지. 디자인 10가지와 판형 4가지." width="1080" height="1350" loading="lazy" /></a>
+            <figcaption><a href="assets/bulletin/cardnews-3.jpg" download="쉬운주보-카드뉴스-3.jpg">3장 받기 ↓</a></figcaption></figure>
+          <figure><a href="assets/bulletin/cardnews-4.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/cardnews-4.jpg" alt="카드뉴스 4: 링크·QR까지 한 번에. 휴대폰 주보와 내려받기 QR." width="1080" height="1350" loading="lazy" /></a>
+            <figcaption><a href="assets/bulletin/cardnews-4.jpg" download="쉬운주보-카드뉴스-4.jpg">4장 받기 ↓</a></figcaption></figure>
         </div>
+        <p class="cards__all"><a class="btn btn--line" href="assets/bulletin/easyjubo-cardnews.zip" download>카드뉴스 4장 한 번에 받기 (ZIP)</a></p>
+      </section>
+
+      <!-- 사용법: 실제 화면을 따라 하며 배우기 -->
+      <section class="guide" id="guide" aria-labelledby="guide-title">
+        <div class="head">
+          <p class="kicker">사용법 · 실제 화면으로 따라 하기</p>
+          <h2 id="guide-title">처음이어도 여덟 걸음이면 됩니다</h2>
+          <p>아래 화면은 지어낸 견본 「쉬운주보교회」로 실제 프로그램을 찍은 것입니다. 차례대로 따라 하시면 첫 주보가 완성됩니다.</p>
+        </div>
+        <nav class="guide__toc" aria-label="사용법 차례"><a href="#guide-1"><b>1</b>쉬운주보 열기</a><a href="#guide-2"><b>2</b>내용 확인하고 AI에게 맡기기</a><a href="#guide-3"><b>3</b>헌금·QR 링크·우리 교회 칸</a><a href="#guide-4"><b>4</b>판형 고르기</a><a href="#guide-5"><b>5</b>색·디자인 MD·표지 사진</a><a href="#guide-6"><b>6</b>칸 차례 바꾸고 디자인 고르기</a><a href="#guide-7"><b>7</b>편집기에서 손질하기</a><a href="#guide-8"><b>8</b>인쇄용 PDF·모바일 주보로 저장</a></nav>
+        <ol class="guide__list">
+          <li class="guide__step" id="guide-1">
+            <div class="guide__text">
+              <p class="guide__no">01</p>
+              <h3>쉬운주보 열기</h3>
+              <ul><li>바탕화면이나 시작 메뉴의 <b>쉬운주보</b> 아이콘을 누릅니다. (쉬운AI 첫 화면의 [주보 만들기]도 같은 곳입니다.)</li><li><b>이번 주 PPT에서 가져오기</b>: 쉬운AI로 만든 이번 주 예배 PPT의 순서·설교·광고를 그대로 채웁니다.</li><li><b>지난주 주보 복사</b>: 날짜는 한 주 뒤로, 순서·섬기는 분·연락처는 그대로 두고 설교·광고만 비웁니다.</li></ul>
+              <p class="guide__tip"><b>도움말</b> 처음 쓰시면 「지난주 주보 복사」를 눌러도 빈 주보로 시작합니다.</p>
+            </div>
+            <a class="guide__shot" href="assets/bulletin/guide-1.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/guide-1.jpg" alt="쉬운주보 첫 화면. '이번 주 PPT에서 가져오기'와 '지난주 주보 복사' 두 단추" width="1280" height="800" loading="lazy" /><span>크게 보기 ↗</span></a>
+          </li>
+          <li class="guide__step" id="guide-2">
+            <div class="guide__text">
+              <p class="guide__no">02</p>
+              <h3>내용 확인하고 AI에게 맡기기</h3>
+              <ul><li>맨 위(교회 이름·예배 이름·날짜·표어), 예배 순서, 말씀, 교회 소식, 기도, 일정, 섬기는 분을 칸마다 확인합니다.</li><li><b>✨ AI로 요점 3개와 적용 쓰기</b>: 설교 원고를 읽고 요점과 이번 주 적용을 씁니다(30초~1분).</li><li><b>✨ AI로 읽기 쉽게 다듬기</b>: 교회 소식 제목과 글을 짧게 다듬습니다. 날짜·시간·숫자가 바뀌면 그 소식은 원래 글로 둡니다.</li></ul>
+              <p class="guide__tip"><b>도움말</b> 예배 순서는 한 줄에 「순서 | 내용 | 담당」, 교회 소식은 「제목 | 내용」으로 적습니다. 비워 둔 칸은 주보에 만들지 않습니다.</p>
+            </div>
+            <a class="guide__shot" href="assets/bulletin/guide-2.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/guide-2.jpg" alt="주보 내용 화면. 설교 제목·본문·설교자 칸과 'AI로 요점 3개와 적용 쓰기' 단추" width="1280" height="800" loading="lazy" /><span>크게 보기 ↗</span></a>
+          </li>
+          <li class="guide__step" id="guide-3">
+            <div class="guide__text">
+              <p class="guide__no">03</p>
+              <h3>헌금·QR 링크·우리 교회 칸</h3>
+              <ul><li><b>헌금 안내</b>: 계좌나 헌금 방법을 적습니다.</li><li><b>QR·링크</b>: 「유튜브 예배 | https://…」처럼 적으면 종이 주보에 <b>QR 코드</b>로 들어갑니다(https:// 주소와 전화만).</li><li><b>직접 만든 칸</b>: 목양 칼럼·말씀 암송처럼 우리 교회만의 칸을 4개까지 만듭니다.</li></ul>
+              <p class="guide__tip"><b>도움말</b> 한 번 적은 연락처·헌금·링크·섬기는 분은 다음 주 주보에 그대로 이어집니다.</p>
+            </div>
+            <a class="guide__shot" href="assets/bulletin/guide-3.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/guide-3.jpg" alt="링크 칸과 직접 만든 칸(목양 칼럼)을 입력한 화면" width="1280" height="800" loading="lazy" /><span>크게 보기 ↗</span></a>
+          </li>
+          <li class="guide__step" id="guide-4">
+            <div class="guide__text">
+              <p class="guide__no">04</p>
+              <h3>판형 고르기</h3>
+              <ul><li><b>A4 양면</b>(가장 많이 씀), <b>A4 한 장</b>(두 단), <b>접는 소책자</b>(A4를 반으로 접는 4쪽), <b>큰 소책자</b>(A3 접지) 중에서 고릅니다.</li><li>작은 견본에 이번 주 내용이 실제로 들어가 있어 쪽 수와 모양을 바로 볼 수 있습니다.</li></ul>
+              <p class="guide__tip"><b>도움말</b> 소책자는 저장할 때 접는 순서로 놓은 「인쇄용」 PDF가 함께 나옵니다.</p>
+            </div>
+            <a class="guide__shot" href="assets/bulletin/guide-4.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/guide-4.jpg" alt="판형 네 가지(A4 양면, A4 한 장, 접는 소책자, 큰 소책자)를 미리보기로 고르는 화면" width="1280" height="800" loading="lazy" /><span>크게 보기 ↗</span></a>
+          </li>
+          <li class="guide__step" id="guide-5">
+            <div class="guide__text">
+              <p class="guide__no">05</p>
+              <h3>색·디자인 MD·표지 사진</h3>
+              <ul><li>대표색을 고르거나, 디자인 MD 견본(색 세 칸 단추)을 눌러 색을 한 번에 바꿉니다. [디자인 MD 올리기]로 우리 교회 MD도 쓸 수 있습니다.</li><li><b>✨ AI에게 디자인 맡기기</b>: 이번 주 분량·절기·표지 그림·교회 스킬을 보고 판형·디자인·색·칸 차례를 골라 줍니다.</li><li><b>표지 그림</b>: AI로 그리거나, 그림 파일을 고르거나, <b>교회 사진 모음</b>에서 눌러 넣습니다.</li></ul>
+              <p class="guide__tip"><b>도움말</b> 교회 사진 모음에 예배당·성도 사진을 넣어 두면 매주 한 번 눌러 표지에 씁니다(이 PC에만 둡니다).</p>
+            </div>
+            <a class="guide__shot" href="assets/bulletin/guide-5.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/guide-5.jpg" alt="AI에게 디자인 맡기기 단추, 표지 그림, 교회 사진 모음" width="1280" height="800" loading="lazy" /><span>크게 보기 ↗</span></a>
+          </li>
+          <li class="guide__step" id="guide-6">
+            <div class="guide__text">
+              <p class="guide__no">06</p>
+              <h3>칸 차례 바꾸고 디자인 고르기</h3>
+              <ul><li>▲▼로 칸 차례를 바꾸고, 빼고 싶은 칸은 체크를 끕니다.</li><li>아래 <b>디자인 10가지</b>(전통 격식·사진 표지·색 띠 머리·카드형·흑백 인쇄용 등)를 이번 주 내용 그대로 보며 고릅니다.</li><li>마음에 들면 맨 아래 <b>「우리 교회 틀」로 저장</b>. 다음 주엔 맨 위에서 한 번에 고릅니다.</li><li><b>[이 틀로 만들어 편집기 열기 →]</b>를 누릅니다.</li></ul>
+              <p class="guide__tip"><b>도움말</b> 넘치는 곳이 있으면 견본 아래에 ⚠로 어느 칸을 줄이면 되는지 알려 줍니다.</p>
+            </div>
+            <a class="guide__shot" href="assets/bulletin/guide-6.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/guide-6.jpg" alt="칸 차례와 보이기 목록, 그 아래 디자인 견본들" width="1280" height="800" loading="lazy" /><span>크게 보기 ↗</span></a>
+          </li>
+          <li class="guide__step" id="guide-7">
+            <div class="guide__text">
+              <p class="guide__no">07</p>
+              <h3>편집기에서 손질하기</h3>
+              <ul><li>글을 두 번 누르면 바로 고치고, 끌어서 옮기고, 모서리로 크기를 바꿉니다. 글상자·도형·그림도 넣을 수 있습니다.</li><li>오른쪽 <b>AI에게 부탁</b> 창에 「교회 소식을 짧게」, 「제목 색을 남색으로」처럼 말하면 AI가 고칩니다. 마음에 안 들면 되돌리기.</li></ul>
+              <p class="guide__tip"><b>도움말</b> 고칠 곳(앞면·뒷면·주보 전체)은 아래 단추로 바꿉니다. 고친 내용은 저절로 저장됩니다.</p>
+            </div>
+            <a class="guide__shot" href="assets/bulletin/guide-7.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/guide-7.jpg" alt="편집기 화면. 가운데 주보 앞면, 왼쪽 쪽 목록, 오른쪽 AI에게 부탁 창" width="1280" height="800" loading="lazy" /><span>크게 보기 ↗</span></a>
+          </li>
+          <li class="guide__step" id="guide-8">
+            <div class="guide__text">
+              <p class="guide__no">08</p>
+              <h3>인쇄용 PDF·모바일 주보로 저장</h3>
+              <ul><li><b>[인쇄용 PDF로 저장]</b>: 폴더를 고르면 PDF가 저장되고, 완료 화면에 인쇄 방법(양면 인쇄 등)이 나옵니다.</li><li><b>▾ → [모바일 주보(HTML)로 저장]</b>: 휴대폰에서 읽는 <code>index.html</code> 폴더가 생깁니다. 교회 홈페이지·블로그에 올리면 링크로 나눌 수 있습니다.</li></ul>
+              <p class="guide__tip"><b>도움말</b> 모바일 주보에는 새가족·생일처럼 이름이 든 칸을 넣지 않습니다.</p>
+            </div>
+            <a class="guide__shot" href="assets/bulletin/guide-8.jpg" target="_blank" rel="noopener"><img src="assets/bulletin/guide-8.jpg" alt="저장 메뉴가 열린 편집기. '모바일 주보(HTML)로 저장' 항목" width="1280" height="800" loading="lazy" /><span>크게 보기 ↗</span></a>
+          </li>
+        </ol>
+        <p class="guide__end">다 됐습니다! 다음 주에는 <b>지난주 주보 복사</b> → 설교·소식만 바꾸고 → <b>「우리 교회 틀」</b>을 고르면 몇 분이면 끝납니다. <a href="#download">지금 내려받기 →</a></p>
       </section>
 
       <!-- 디자인 -->
